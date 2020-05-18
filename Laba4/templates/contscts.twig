@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Контакты</title>
+    <link href="DATA/CSS/contactstyle.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    {% include 'navigation.twig' %}
+
+    <section>
+        <h2>
+            Контакты
+        </h2>
+
+        <div><p>
+                Адрес: Вилейка Ул.Партизанская 36
+            </p>
+            <p>
+                Время работы:
+            </p>
+            <p>ПН - ЧТ 08:00 - 23:00;</p>
+            <p>ПТ 08:00 - 02:00 СБ 10:00 - 02:00;</p>
+            <p>ВС 10:00 - 23:00</p></div>
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=1o5WAoSh8YIB_7R42LAhnKCJ91wpxdmmj"
+                width="360" height="360"></iframe>
+
+    </section>
+    {% include 'footer.twig' %}
+</div>
+</body>
+</html>

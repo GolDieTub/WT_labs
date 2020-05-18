@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню</title>
+    <link href="DATA/CSS/menustyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+  {% include 'navigation.twig' %}
+
+      <h2>Меню</h2>
+      <section>
+        {% include 'Bullshit.twig' with {'some_wrds':"Все блюда неизбежно связаны с воспоминаниями: где вы их съели, с кем
+                                                      вы были, окрестности, погода, атмосфера — все это влияет на вкус
+                                                      блюда. Мы бы хотели совершить это путешествие с Вами."
+        } %}
+
+        <h3>
+          Завтраки
+        </h3>
+
+        <p>Континентальный завтрак</p>
+        <img src="DATA/Images/breakfast.jpg" />
+        <p>Яйца Бенедикт</p>
+        <img src="DATA/Images/eggs.jpg" />
+        <p>Овсяная каша с фруктами</p>
+        <img src="DATA/Images/oatmeal.jpg" />
+        <p>Гранола</p>
+        <img src="DATA/Images/granola.jpg" />
+        <p>Вафли</p>
+        <img src="DATA/Images/waffels.jpg" />
+        <p>Творожная запеканка</p>
+        <img src="DATA/Images/cake.jpg" />
+        <h4>Основное Меню</h4>
+        <p>Суп из чечивицы</p>
+        <img src="DATA/Images/soup.jpg" />
+        <p>Солянка</p>
+        <img src="DATA/Images/soup2.jpg" />
+        <p>Салат с цыпленком</p>
+        <img src="DATA/Images/salad.jpg" />
+        <p>Паста с курицей</p>
+        <img src="DATA/Images/pasta.jpg" />
+        <p>Птитим с креветками</p>
+        <img src="DATA/Images/ptitim.jpg" />
+      </section>
+
+  {% include 'footer.twig' %}
+
+    </div>
+  </body>
+</html>
