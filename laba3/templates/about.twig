@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>О Компании</title>
+    <link href="DATA/CSS/contactstyle.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    {% include 'navigation.twig' %}
+
+    <section>
+        <h2>
+            О компании
+        </h2>
+        <article>
+            {% include 'Bullshit.twig' with {'some_wrds':"Claude Monet – это компания единомышленников, которая стремится сделать
+                                                          этот мир вкуснее, ярче и чувственнее."
+            } %}
+            {% include 'Bullshit.twig' with {'some_wrds':"Ведь так мало нужно человеку для хорошего старта. «Доброе утро»
+                                                          начинается с улыбки персонала, круассана и чашечки бодрящего кофе. В
+                                                          суете большого города всегда хочется найти место, где тебя узнают,
+                                                          где тебе рады и где тебя ждут."
+            } %}
+            {% include 'Bullshit.twig' with {'some_wrds':"Claude Monet – это маленький праздник, который всегда с тобой. И благодаря
+                                                          творческому потенциалу нашей команды, этот праздник не устанет вас
+                                                          удивлять."
+            } %}
+
+        </article>
+    </section>
+    {% include 'footer.twig' %}
+</div>
+</body>
+</html>

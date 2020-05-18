@@ -1,0 +1,5 @@
+ErrorDocument 404 /404.html
+<Files "403.php">
+Require all denied
+</Files>
+ErrorDocument 403 /403.html

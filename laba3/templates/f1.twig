@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Отзывы</title>
+    <link href="DATA/CSS/formstyle.css" rel="stylesheet" />
+  </head>
+  <body>
+  {% include 'navigation.twig' %}
+
+    <form action="../f1.php" class="rewiew" method="post">
+      <div class="stripes-block">
+        <div class="line"></div>
+      </div>
+      <h3>Оставьте ваш отзыв</h3>
+      <div class="form-group" >
+        <label for="name">Имя </label>
+        <input type="text" name="fname">
+        <label for="rew">Отзыв </label>
+        <textarea name="message" rows="10" cols="45">
+        </textarea>
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
+  {% include 'comment.twig' %}
+  </body>
+</html>

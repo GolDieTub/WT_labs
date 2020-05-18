@@ -1,0 +1,98 @@
+@media only screen and (orientation: landscape)  {
+  body {
+    font-family: 'Muli', century gothic;
+    font-size: 20px;
+  }
+}
+@media only screen and (orientation: portrait)  {
+  body {
+    font-family: 'Muli', century gothic;
+    font-size: 10px;
+  }
+}
+body {
+  background: #9400D3 no-repeat center center fixed;
+  background-size: cover;
+}
+h1 {
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+}
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+  font-size: 15px;
+  padding-top: 250px;
+}
+
+h2 {
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  margin: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 35px;
+  color: darksalmon;
+  text-shadow: lightgrey;
+}
+
+h3 {
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+section {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  color: #ffffff;
+
+  text-align: center;
+}
+
+img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4 {
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration-line: underline;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  text-align: center;
+  padding-left: 10%;
+}
