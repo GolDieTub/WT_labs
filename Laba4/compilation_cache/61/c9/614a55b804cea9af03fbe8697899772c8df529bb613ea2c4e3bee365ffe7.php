@@ -36,10 +36,26 @@ class __TwigTemplate_61c9614a55b804cea9af03fbe8697899772c8df529bb613ea2c4e3bee36
                                                   предоставляя своим посетителям приятные моменты в теплой и
                                                   непринужденной обстановке.")));
         // line 18
-        echo "</section>";
-        // line 20
+        echo "</section>
+<form action=\"index.php\" method=\"post\">
+    <table align=center>
+        <tr>
+            <td>Логин:</td>
+            <td><input type=\"text\" name=\"login\" /></td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td><input type=\"password\" name=\"password\" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type=\"submit\" class=\"buttons\" value=\"Войти\" /></td>
+        </tr>
+    </table>
+</form>";
+        // line 36
         $this->env->loadTemplate("footer.twig")->display($context);
-        // line 21
+        // line 37
         echo "</body>
 </html>
 ";
@@ -57,6 +73,6 @@ class __TwigTemplate_61c9614a55b804cea9af03fbe8697899772c8df529bb613ea2c4e3bee36
 
     public function getDebugInfo()
     {
-        return array (  43 => 21,  41 => 20,  39 => 18,  35 => 14,  32 => 12,  30 => 11,  19 => 1,);
+        return array (  59 => 37,  57 => 36,  39 => 18,  35 => 14,  32 => 12,  30 => 11,  19 => 1,);
     }
 }

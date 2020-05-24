@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Claude Monet</title>
+    <link href="DATA/CSS/style.css" rel="stylesheet" />
+</head>
+
+<body>
+{% include 'navigation.twig' %}
+
+    <p> Столик, дата, время, заказ, цена</p>
+    {% for ords in orders %}
+        {% include 'orders.twig' with {
+            'Столик':ords.Столик,
+            'время':ords.время,
+            'дата':ords.дата,
+            'заказ':ords.заказ,
+            'цена':ords.цена,}%}
+    {% endfor %}
+
+<form action="login.php" method="post">
+    <table align=center>
+        <tr>
+            <td>Заказ:</td>
+            <td><input type="textarea" name="new_order" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" class="buttons" value="Отправить" /></td>
+        </tr>
+    </table>
+</form>
+
+{% include 'footer.twig' %}
+</body>
+</html>
